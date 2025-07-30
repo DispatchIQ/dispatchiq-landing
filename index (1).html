@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DispatchIQ Voice - AI Customer Care Support</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f7fa; color: #333; }
+  header { background: #004aad; color: white; padding: 2rem 1rem; text-align: center; }
+  h1 { margin: 0; font-size: 2.5rem; }
+  main { max-width: 1000px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+  section { margin-bottom: 2rem; }
+  h2 { color: #004aad; }
+  .pricing-table { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .plan { background: #e6f0ff; padding: 1rem; border-radius: 8px; text-align: center; }
+  .plan h3 { margin-top: 0; }
+  .plan p.price { font-size: 1.4rem; color: #004aad; font-weight: bold; }
+  table { width: 100%; border-collapse: collapse; margin-top: 2rem; }
+  th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: center; }
+  th { background-color: #004aad; color: white; }
+  form { display: flex; flex-direction: column; margin-top: 2rem; }
+  label { margin: 0.5rem 0 0.2rem; }
+  input, button { padding: 0.8rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 4px; }
+  button { background: #004aad; color: white; border: none; margin-top: 1rem; cursor: pointer; }
+  button:hover { background: #003377; }
+  footer { text-align: center; font-size: 0.9rem; color: #666; padding: 1rem; margin-top: 3rem;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>DispatchIQ Voice</h1>
+  <p>AI Customer Care Support for Office Equipment Dealers</p>
+</header>
+
+<main>
+  <section>
+    <h2>Pricing Plans</h2>
+    <div class="pricing-table">
+      <div class="plan">
+        <h3>Starter</h3>
+        <p class="price">$199/month</p>
+        <p>Up to 500 minutes<br/>1 SIP line<br/>Basic support features</p>
+      </div>
+      <div class="plan">
+        <h3>Professional</h3>
+        <p class="price">$349/month</p>
+        <p>Up to 1,500 minutes<br/>3 SIP lines<br/>SMS + Meter Reads</p>
+      </div>
+      <div class="plan">
+        <h3>Enterprise</h3>
+        <p class="price">$599/month</p>
+        <p>Up to 5,000 minutes<br/>5 SIP lines<br/>Supply Orders + Dealer Portal</p>
+      </div>
+      <div class="plan">
+        <h3>Custom</h3>
+        <p class="price">Contact Us</p>
+        <p>Unlimited usage<br/>Multi-location<br/>SLAs + Advanced Analytics</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Feature Comparison</h2>
+    <table>
+      <tr>
+        <th>Feature</th>
+        <th>Starter</th>
+        <th>Professional</th>
+        <th>Enterprise</th>
+        <th>Custom</th>
+      </tr>
+      <tr><td>Service Call Intake</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
+      <tr><td>Meter Read Collection</td><td>–</td><td>✔</td><td>✔</td><td>✔</td></tr>
+      <tr><td>Supply Order Capture</td><td>–</td><td>–</td><td>✔</td><td>✔</td></tr>
+      <tr><td>SMS Follow-Up</td><td>–</td><td>✔</td><td>✔</td><td>✔</td></tr>
+      <tr><td>Custom Prompts</td><td>–</td><td>–</td><td>✔</td><td>✔</td></tr>
+      <tr><td>Dealer Portal Access</td><td>–</td><td>–</td><td>✔</td><td>✔</td></tr>
+      <tr><td>Analytics Dashboard</td><td>–</td><td>–</td><td>–</td><td>✔</td></tr>
+      <tr><td>Priority Support</td><td>–</td><td>–</td><td>✔</td><td>✔</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Sign Up for a Free 30-Day Trial</h2>
+    <form id="signupForm">
+      <label for="dealerName">Dealer Name</label>
+      <input type="text" id="dealerName" name="dealerName" required />
+
+      <label for="contactName">Contact Name</label>
+      <input type="text" id="contactName" name="contactName" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" />
+
+      <button type="submit">Request Trial</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 DispatchIQ Voice. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById('signupForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Thank you for your interest! We will contact you shortly.');
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
